@@ -19,4 +19,4 @@ https://github.com/davidgyoung/OverflowAreaBeaconRef
 ### 修正内容：
     全面修正 
     iBeaconを受信して，受信したmajor,minor,RSSIをMDL所管のMQTTbrokerへ送信する方式へ変更  
-     MQTTクライアントライブラリとしてcocoaMQTTを使用。ただし最新版はバグがあり、2.1.6を使用(XcodeのPackage Dependenciesで指定)  
+    MQTTクライアントライブラリとしてcocoaMQTTを使用。ただし最新版はバグがあり、2.1.6を使用(XcodeのPackage Dependenciesで指定)  
