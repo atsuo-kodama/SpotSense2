@@ -25,3 +25,4 @@ https://github.com/davidgyoung/OverflowAreaBeaconRef
 ### 修正内容：
 　　iPhoneが再起動した後にiBeaconのリージョンに入った時、ユーザーへアプリを起動するように促す通知とアプリアイコンにバッジを表示する機能を追加  
 　　デバッグ用の詳細ログを出力する機能と、ログのON/OFFを選択するスイッチを追加  
+　　レンジングの開始/停止処理をシンプル化  
