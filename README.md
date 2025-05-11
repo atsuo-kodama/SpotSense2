@@ -20,3 +20,8 @@ https://github.com/davidgyoung/OverflowAreaBeaconRef
 　　全面修正。上書きインストールして問題無いよう、保存済みのUserDefaultsはそのまま使う  
 　　iBeaconを受信して，受信したmajor,minor,RSSIをMDL所管のMQTTbrokerへ送信する方式へ変更  
 　　MQTTクライアントライブラリとしてcocoaMQTTを使用。ただし最新版はバグがあり、2.1.6を使用(XcodeのPackage Dependenciesで指定)  
+
+## .2025/05/12 機能追加
+### 修正内容
+    iPhoneが再起動した後にiBeaconのリージョンに入った時、ユーザーへアプリを起動するように促す通知とアプリアイコンにバッジを表示する機能を追加
+    デバッグ用の詳細ログを出力する機能と、ログのON/OFFを選択するスイッチを追加
