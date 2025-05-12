@@ -295,7 +295,16 @@ class BeaconManager: NSObject, ObservableObject, CLLocationManagerDelegate , Coc
                         logToFile("✅ Cycle completed: \(cycleTime) seconds")
                         lastStaySent = Date()
                     }
-                    skipPublish()
+                    var beaconData: [[String: Any]] = []
+                    let beaconDict: [String: Any] = [
+                        "major": strongestMajor,
+                        "minor": strongestMinor,
+                        "avgRSSI": Int(round(strongestRSSI)),
+                        "id": userId
+                    ]
+                    beaconData.append(beaconDict)
+                    mqttManager.publishBeaconData(beaconData: beaconData, mqttTopic: mqttTopic) // 最強のbeaconのデータだけpublish
+                    //skipPublish()
                     skipCounter = 0
                 }
             }
